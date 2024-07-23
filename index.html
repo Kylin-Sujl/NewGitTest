@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+        }
+        .hide{ 
+            display: none;
+        }
+        button{
+            border: 2px solid black; /* 设置边框粗细和颜色 */
+            border-radius: 50%; /* 将按钮变成圆形 */
+            padding: 10px 20px; /* 设置按钮的内边距 */
+            background-color: #fff; /* 设置按钮背景颜色 */
+            cursor: pointer; /* 设置鼠标悬停时的光标样式 */
+        }
+        li:first-child{
+            
+        }  /* 可以选择第一个li来单独设置*/
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration:underline;
+        }  /* A 鼠标放上后有 下划线   这种写法是伪类*/
+
+         li input{
+            display: none;
+        }
+        li.edit span{
+            display: none;
+        }
+        li.edit input{
+            display: initial;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="">hi!</a>
+    <p>
+        <button>i am a button</button>
+    </p>
+    <p>
+        <input id="num_one"> + <input id="num_two">
+    </p>
+    <p id="num_Sum"></p>
+
+    <ul>
+        <li><a data-img="img1" id="size1">11111111111</a></li>
+        <li><a data-img="img2" id="size2">22222222222</a></li>
+        <li><a data-img="img3" id="size3">33333333333</a></li>
+    </ul>
+    <img class="hide" id="img1" src="img/1.png">
+    <img class="hide" id="img2" src="img/2.png">
+    <img class="hide" id="img3" src="img/3.png">
+
+
+
+    <ul id="checklist">
+        <li>
+            <span>apple</span>
+            <input value="apple">
+        </li>
+        <li>
+            <span>orange</span>
+            <input value="orange">
+        </li>
+        <li>
+            <span>banana</span>
+            <input value="banana">
+        </li>
+    </ul>
+    <script src="scrept/main.js"></script>
+</body>
+</html>
